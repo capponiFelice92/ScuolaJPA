@@ -20,7 +20,7 @@ public class ScuolaJPAServiceImpl implements ScuolaJPAService {
 
     @Override
     public void svuotaTabellaDocente() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        docenteRepository.deleteAllInBatch();
     }
 
     @Override

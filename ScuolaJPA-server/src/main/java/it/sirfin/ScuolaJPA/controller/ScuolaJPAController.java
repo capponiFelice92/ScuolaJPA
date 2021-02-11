@@ -10,14 +10,21 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin("*")
 @RestController
 public class ScuolaJPAController {
-    
+
     @Autowired
     ScuolaJPAService scuolaJPAService;
-    
+
     @RequestMapping("/initialize")
-    public void init(){
+    public void init() {
         scuolaJPAService.svuotaTabellaDocente();
-        Docente d = new Docente("Felice", "Capponi");
-        
+        scuolaJPAService.inserisciDocente(new Docente("Felice", "Capponi"));
+        scuolaJPAService.inserisciDocente(new Docente("Daniele", "Fastelli"));
+        scuolaJPAService.inserisciDocente(new Docente("Matteo", "Moretti"));
+        scuolaJPAService.inserisciDocente(new Docente("Nicolò", "Abbatecola"));       
+    }
+    
+    @RequestMapping("/deletealldocente")
+    public void deleteAllDocente() {
+        scuolaJPAService.svuotaTabellaDocente();
     }
 }
