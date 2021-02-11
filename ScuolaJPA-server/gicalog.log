@@ -619,3 +619,44 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 	... 86 common frames omitted
 
 2021-02-11 16:48:24.389  WARN 15556 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-11 17:20:46.248  WARN 17276 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'scuolaJPAController': Unsatisfied dependency expressed through field 'scuolaJPAService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'it.sirfin.ScuolaJPA.service.ScuolaJPAService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-02-11 17:20:46.284 ERROR 17276 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field scuolaJPAService in it.sirfin.ScuolaJPA.controller.ScuolaJPAController required a bean of type 'it.sirfin.ScuolaJPA.service.ScuolaJPAService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'it.sirfin.ScuolaJPA.service.ScuolaJPAService' in your configuration.
+
+2021-02-11 17:21:07.214  WARN 8828 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-11 17:30:35.146  WARN 9612 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-11 17:32:22.988  WARN 10096 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'scuolaJPAController': Unsatisfied dependency expressed through field 'scuolaJPAService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'it.sirfin.ScuolaJPA.service.ScuolaJPAService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-02-11 17:32:23.031 ERROR 10096 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field scuolaJPAService in it.sirfin.ScuolaJPA.controller.ScuolaJPAController required a bean of type 'it.sirfin.ScuolaJPA.service.ScuolaJPAService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'it.sirfin.ScuolaJPA.service.ScuolaJPAService' in your configuration.
+
+2021-02-11 17:38:44.382  WARN 9544 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning

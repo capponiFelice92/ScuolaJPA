@@ -10,11 +10,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ScuolaJPAController {
     
-//    @Autowired
-//    ScuolaJPAService scuolaJPAService;
-//    
-//    @RequestMapping("/init")
-//    public void init(){
-//        
-//    }
+    @Autowired
+    ScuolaJPAService scuolaJPAService;
+    
+    @RequestMapping("/initialize")
+    public void init(){
+        scuolaJPAService.svuotaTabellaDocente();
+    }
 }

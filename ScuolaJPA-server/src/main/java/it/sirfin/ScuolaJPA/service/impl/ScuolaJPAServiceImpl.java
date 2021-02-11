@@ -5,8 +5,9 @@ import it.sirfin.ScuolaJPA.repository.DocenteRepository;
 import it.sirfin.ScuolaJPA.service.ScuolaJPAService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
-
+@Service
 public class ScuolaJPAServiceImpl implements ScuolaJPAService {
 
     @Autowired
