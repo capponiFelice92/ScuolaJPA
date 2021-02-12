@@ -17,7 +17,7 @@ public class ScuolaJPAController {
     @RequestMapping("/initialize")
     public void init() {
         scuolaJPAService.svuotaTabellaDocente();
-        scuolaJPAService.inserisciDocente(new Docente("Felice", "Capponi"));
+        scuolaJPAService.inserisciDocente(new Docente("Felice", "Sposito"));
         scuolaJPAService.inserisciDocente(new Docente("Daniele", "Fastelli"));
         scuolaJPAService.inserisciDocente(new Docente("Matteo", "Moretti"));
         scuolaJPAService.inserisciDocente(new Docente("Nicolò", "Abbatecola"));       
