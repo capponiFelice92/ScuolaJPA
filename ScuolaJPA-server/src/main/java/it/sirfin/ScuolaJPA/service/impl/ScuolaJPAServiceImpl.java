@@ -25,12 +25,12 @@ public class ScuolaJPAServiceImpl implements ScuolaJPAService {
 
     @Override
     public List<Docente> trovaTuttiIDocenti() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return docenteRepository.findAll();
     }
 
     @Override
     public void cancellaDocente(Docente doc) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        docenteRepository.delete(doc);
     }
     
 }
